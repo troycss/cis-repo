@@ -1,0 +1,59 @@
+header {
+    background-color: #000000;
+    padding: 10px 0;
+    h1{
+        text-align: center;
+        color: orange
+    }
+  
+    .navbar ul {
+        list-style-type: none;
+        background-color: #37009c;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar a{
+        color : rgb(186, 92, 4);
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+    .navbar a:hover{
+        background-color: rgb(4, 0, 124);
+    }
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #000000;
+    color: #f18100;
+}
+h1{
+    color: red;
+}
+
+p{
+    line-height: 1.6;
+}
+
+h2{
+    color:red;
+}
+
+p2
+{
+    font-style: italic;
+    color: red;
+}
+h3
+{
+    color: red;
+}
+
+h4
+{
+    color: red;
+}
