@@ -19,6 +19,14 @@
     --light-opacity:0;
 }
 
+.contrastmode {
+    --bg: var(--dark-grey);
+    --text: var(--light-grey);
+    --dark-opacity:1;
+    --light-opacity:0;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -47,13 +55,18 @@ body {
         background-color: var(--bg);
         color: var(--text);
         transition: background-color 0.3s ease, color 0.3s ease;
-    }
+        display:flex;
+        flex-direction: column;
+        min-height: 100vh;;
+    }   
 
     .navbar ul {
         list-style-type: none;
-        background-color: #37009c;
+        background-color: #7a1993;
         padding: 0px;
         margin: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .navbar li{
@@ -69,5 +82,5 @@ body {
         text-align: center;
     }
     .navbar a:hover{
-        background-color: rgb(127, 31, 126);
+        background-color: rgb(46, 121, 187);
     }
