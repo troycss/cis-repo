@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horror Film Survey</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Favorite Horror Film Survey</h1>
+        <p>What is your favorite horror film?</p>
+
+
+        <form id ="horrorForm">
+            <label for="filmName">Film Name:</label>
+            <input type="text" id="filmName" name="filmName" required />
+
+            <div class="radio-group"></div>
+
+                    <input type="radio" id="slasher" name="subgenre" value="Slasher">
+                    <label for="slasher">Slasher</label><br>
+
+                    <input type="radio" id="supernatural" name="subgenre" value="Supernatural">
+                    <label for="supernatural">Supernatural</label><br>
+
+                    <input type="radio" id="psychological" name="subgenre" value="Psychological">
+                    <label for="psychological">Psychological</label><br>
+
+                    <input type="radio" id="foundFootage" name="subgenre" value="Found Footage">
+                    <label for="foundFootage">Found Footage</label><br>
+
+                    <input type="radio" id="classic" name="subgenre" value="Classic">
+                    <label for="classic">Classic</label><br>
+
+        </div>            
+           
+            <button type="submit">Submit</button>
+        </form>
+            
+
+    <script src="script.js"></script>
+  </body>
+</html>
