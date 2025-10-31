@@ -4,40 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horror Film Survey</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+
     <div class="container">
-        <h1>Favorite Horror Film Survey</h1>
-        <p>What is your favorite horror film?</p>
+      <h1 class="title">Favorite Horror Film Survey
+
+    <span class="drop"></span>
+    <span class="drop"></span>
+    <span class="drop"></span>
+    <span class="drop"></span>
+    <span class="drop"></span>
+
+      </h1>
+
+       <!-- Background gooey drops -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 0; height: 0">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
 
 
-        <form id ="horrorForm">
-            <label for="filmName">Film Name:</label>
-            <input type="text" id="filmName" name="filmName" required />
+      <p>What is your favorite horror film?</p>
 
-            <div class="radio-group"></div>
+      <form id="horrorForm">
+        <label for="filmName">Film Name:</label>
+        <input type="text" id="filmName" name="filmName" required />
 
-                    <input type="radio" id="slasher" name="subgenre" value="Slasher">
-                    <label for="slasher">Slasher</label><br>
+        <div class="radio-group">
+          <input type="radio" id="slasher" name="subgenre" value="Slasher" />
+          <label for="slasher">Slasher</label><br />
 
-                    <input type="radio" id="supernatural" name="subgenre" value="Supernatural">
-                    <label for="supernatural">Supernatural</label><br>
+          <input type="radio" id="supernatural" name="subgenre" value="Supernatural" />
+          <label for="supernatural">Supernatural</label><br />
 
-                    <input type="radio" id="psychological" name="subgenre" value="Psychological">
-                    <label for="psychological">Psychological</label><br>
+          <input type="radio" id="psychological" name="subgenre" value="Psychological" />
+          <label for="psychological">Psychological</label><br />
 
-                    <input type="radio" id="foundFootage" name="subgenre" value="Found Footage">
-                    <label for="foundFootage">Found Footage</label><br>
+          <input type="radio" id="foundFootage" name="subgenre" value="Found Footage" />
+          <label for="foundFootage">Found Footage</label><br />
 
-                    <input type="radio" id="classic" name="subgenre" value="Classic">
-                    <label for="classic">Classic</label><br>
+          <input type="radio" id="classic" name="subgenre" value="Classic" />
+          <label for="classic">Classic</label><br />
+        </div>
 
-        </div>            
-           
-            <button type="submit">Submit</button>
-        </form>
-            
+        <button type="submit">Submit</button>
+      </form>
+
+         
 
     <script src="script.js"></script>
   </body>
 </html>
+
