@@ -1,6 +1,3 @@
-
-The three features I chose to work with during this assignemnt were the Nav bar, links to additional pages, and a background color shift when hovering over links in the nav bar.  This webpage looks dated because it's based off of my uncle's blog. I figured I would start with it being true to his preferences and eventually modernize it.  The intent was to eventually create a program that would go through and copy his blog posts to the website since he had been working on it up until he fell ill.
-
       <div class="code-block">
         <span class="comment">## Midterm: [Happy Society]</span>
         <span class="comment">## CIS 185 - Midterm Project</span>
