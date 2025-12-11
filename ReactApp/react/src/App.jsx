@@ -1,4 +1,8 @@
-import "App.css";
+import React, { useState } from "react";
+import ReactDOM from "./react/node-modules/react-dom/client";
+import App from "./App.jsx"; 
+import "./App.css";
+
 
 export default function App() { 
     const [tasks, setTasks] = useState([
